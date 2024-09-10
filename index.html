@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise One</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#box-model">Box Model</a>
+          </li>
+          <li>
+            <a href="#flexbox">Flexbox</a>
+          </li>
+          <li>
+            <a href="#positioning-elem">Positioning Elements</a>
+          </li>
+          <li>
+            <a href="#heading-usage">Heading Usage</a>
+          </li>
+          <li>
+            <a href="#simple-js">Simple Javascript</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="box-model-section" id="box-model">
+        <div class="box-model-wrapper">
+          <div>
+            <h2>CSS Box Model</h2>
+            <p>/* Padding is inside of the element in CSS */</p>
+            <p><strong>padding: 40px</strong></p>
+            <p>/* Margin is outside of the element in CSS */</p>
+            <p><strong>margin: 40px; (outside)</strong></p>
+            <p>/* Border is added to width and height of element in CSS */</p>
+            <p><strong>border: 10px solid green;</strong></p>
+          </div>
+        </div>
+      </section>
+      <section class="flexbox-section" id="flexbox">
+        <div class="flexbox-wrapper">
+          <div class="flexbox-element flexbox-title">
+            <div>
+              <h2>Display: Flex</h2>
+            </div>
+          </div>
+          <div class="flexbox-bottom">
+            <div class="flexbox-element flexbox-left">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="flexbox-element flexbox-right">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="positioning-elem-section" id="positioning-elem">
+        <div class="positioning-elem-wrapper">
+          <div class="positioning-elem-title">
+            <h2>Positioning Elements</h2>
+          </div>
+          <div class="circle" style="right: 0px; top: 34px"></div>
+          <div class="circle" style="right: 110px; top: 270px"></div>
+          <div class="circle" style="left: 0px; bottom: 34px"></div>
+          <div class="square" style="right: 0px; bottom: 34px"></div>
+          <div class="square" style="right: 500px; top: 200px"></div>
+        </div>
+      </section>
+      <section class="heading-usage-section" id="heading-usage">
+        <div class="heading-usage-wrapper">
+          <h1>Proper Heading Usage (h1)</h1>
+          <h2>A heading describes the content below it (h2)</h2>
+          <h3>Style of the text is not relevant (h3)</h3>
+          <p>
+            Here is a paragraph about why text-size does not affect the order of
+            the headings. We want to consider the hierarchy of the information
+            and not the styling for determining which tag we choose. (p)
+          </p>
+          <h4>This could be another heading about text size (h4)</h4>
+          <p>
+            And you could put another pararaph (or two, or three...) under this
+            further describing the concept. (p)
+          </p>
+        </div>
+      </section>
+      <section class="simple-js-section" id="simple-js">
+        <div class="simple-js-wrapper">
+          <script>
+            let counterVal = 0;
+            function increaseCounterValue() {
+              counterVal++;
+              const counterDiv = document.querySelector("#counter");
+              counterDiv.innerHTML = counterVal;
+            }
+          </script>
+          <h2>Simple JavaScript</h2>
+          <div class="counter-button-wrapper">
+            <p id="counter">0</p>
+            <div id="button">
+              <button onClick="increaseCounterValue()">Click to Increase</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <p>Nidhi Desu - Fall, 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
